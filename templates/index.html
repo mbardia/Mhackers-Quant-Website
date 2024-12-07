@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Indicators</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Indicators</h1>
+        <form id="stockForm" action="/submit" method="POST">
+            <label for="stock">Stock Symbol:</label>
+            <input type="text" id="stock" name="stock" placeholder="Enter stock symbol (e.g., AAPL)" required>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
